@@ -1,0 +1,5 @@
+app_channel_edition_edit_channel:
+    path: /edit_channel/{id}
+    defaults: { _controller: 'AppBundle:Channel/Edition:editChannel' }
+    requirements:
+        id: \d+

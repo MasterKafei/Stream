@@ -1,0 +1,19 @@
+AppBundle\Entity\Channel:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\ChannelRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+    manyToOne:
+        file:
+            targetEntity: AppBundle\Entity\File
+            cascade: [persist]
+    lifecycleCallbacks: {  }

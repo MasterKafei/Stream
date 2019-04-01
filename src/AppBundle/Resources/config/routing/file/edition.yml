@@ -1,0 +1,5 @@
+app_file_edition_edit_file:
+    path: /edit_file/{id}
+    defaults: { _controller: 'AppBundle:File/Edition:editFile' }
+    requirements:
+        id: \d+

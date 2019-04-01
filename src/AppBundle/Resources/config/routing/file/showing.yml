@@ -1,0 +1,5 @@
+app_file_showing_show_file:
+    path: /show_file/{id}
+    defaults: { _controller: 'AppBundle:File/Showing:showFile' }
+    requirements:
+        id: \d+

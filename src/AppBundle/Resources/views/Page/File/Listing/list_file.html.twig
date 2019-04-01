@@ -1,0 +1,39 @@
+{% extends '@Layout/Page/Default/base.html.twig' %}
+
+{% block body %}
+    <a href="{{ path('app_file_creation_create_file') }}">Créer un nouveau fichier</a>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Path</th>
+                <th>Last update</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for file in files %}
+            <tr>
+                <td>{{ file.id }}</td>
+                <td>{{ file.fileName }}</td>
+                <td>{{ file.path }}</td>
+                <td>{{ file.lastUpdate|date }}</td>
+                <td>
+                    <a href="{{ path('app_file_edition_edit_file', {'id': file.id}) }}">
+                        Editer
+                    </a>
+                    |
+                    <a href="{{ path('app_file_showing_show_file', {'id': file.id}) }}">
+                        Visualiser
+                    </a>
+                    |
+                    <a href="{{ path('app_file_deletion_delete_file', {'id': file.id}) }}">
+                        Supprimer
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock body %}

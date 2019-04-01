@@ -1,0 +1,24 @@
+app_channel_creation:
+    prefix: /creation/
+    resource: "creation.yml"
+
+app_channel_deletion:
+    prefix: /deletion/
+    resource: "deletion.yml"
+
+app_channel_edition:
+    prefix: /edition/
+    resource: "edition.yml"
+
+app_channel_listing:
+    prefix: /listing/
+    resource: "listing.yml"
+
+app_channel_showing:
+    prefix: /showing/
+    resource: "showing.yml"
+
+app_channel_adding:
+    prefix: /adding/
+    resource: "adding.yml"
+

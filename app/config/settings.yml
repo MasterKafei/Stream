@@ -1,0 +1,4 @@
+parameters:
+    vich_uploader.directory_upload.path: /uploads
+    vich_uploader.directory_upload.absolute_path: '%kernel.project_dir%/web%vich_uploader.directory_upload.path%'
+    vich_uploader.directory_upload.protected_path: '%kernel.project_dir%/uploads/protected_file/'

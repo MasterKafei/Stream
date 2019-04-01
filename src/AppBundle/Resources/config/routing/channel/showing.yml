@@ -1,0 +1,9 @@
+app_channel_showing_show_channel:
+    path: /show_channel/{id}
+    defaults: { _controller: 'AppBundle:Channel\Showing:showChannel' }
+    requirements:
+        id: \d+
+
+app_channel_showing_stream_file:
+    path: /stream_file/{id}
+    defaults: { _controller: 'AppBundle:Channel\Showing:streamFile' }

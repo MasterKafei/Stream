@@ -1,0 +1,3 @@
+app_channel_creation_create_channel:
+    path: /create_channel/
+    defaults: { _controller: 'AppBundle:Channel/Creation:createChannel' }

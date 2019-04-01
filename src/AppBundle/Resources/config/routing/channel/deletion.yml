@@ -1,0 +1,5 @@
+app_channel_deletion_delete_channel:
+    path: /delete_channel/{id}
+    defaults: { _controller: 'AppBundle:Channel/Deletion:deleteChannel' }
+    requirements:
+        id: \d+

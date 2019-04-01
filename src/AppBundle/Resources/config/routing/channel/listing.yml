@@ -1,0 +1,3 @@
+app_channel_listing_list_channel:
+    path: /list_channel/
+    defaults: { _controller: 'AppBundle:Channel/Listing:listChannel' }

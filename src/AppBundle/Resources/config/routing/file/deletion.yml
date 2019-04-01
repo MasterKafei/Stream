@@ -1,0 +1,5 @@
+app_file_deletion_delete_file:
+    path: /delete_file/{id}
+    defaults: { _controller: 'AppBundle:File/Deletion:deleteFile' }
+    requirements:
+        id: \d+

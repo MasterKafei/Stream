@@ -1,0 +1,41 @@
+{% extends '@Layout/Page/Default/base.html.twig' %}
+
+{% block body %}
+    <a href="{{ path('app_channel_creation_create_channel') }}">
+        Créer une nouvelle chaine
+    </a>
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for channel in channels %}
+            <tr>
+                <td>{{ channel.id }}</td>
+                <td>{{ channel.name }}</td>
+                <td>
+                    <a href="{{ path('app_channel_edition_edit_channel', {'id': channel.id}) }}">
+                        Editer
+                    </a>
+                    |
+                    <a href="{{ path('app_channel_showing_show_channel', {'id': channel.id}) }}">
+                        Afficher
+                    </a>
+                    |
+                    <a href="{{ path('app_channel_adding_add_file', {'id': channel.id}) }}">
+                        Ajouter un fichier
+                    </a>
+                    |
+                    <a href="{{ path('app_channel_deletion_delete_channel', {'id': channel.id}) }}">
+                        Supprimer
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock body %}

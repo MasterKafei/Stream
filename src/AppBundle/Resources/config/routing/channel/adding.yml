@@ -1,0 +1,5 @@
+app_channel_adding_add_file:
+    path:   /add_file/{id}
+    defaults: { _controller: 'AppBundle:Channel\Adding:addFile' }
+    requirements:
+        id: \d+

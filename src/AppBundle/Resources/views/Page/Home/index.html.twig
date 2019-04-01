@@ -1,0 +1,9 @@
+{% extends '@Layout/Page/Default/base.html.twig' %}
+
+{% block body %}
+    Salut tu veux faire quoi ?
+    <ul>
+        <li><a href="{{ path('app_file_listing_list_file') }}">Voir les fichiers</a></li>
+        <li><a href="{{ path('app_channel_listing_list_channel') }}">Voir les channels</a></li>
+    </ul>
+{% endblock body %}

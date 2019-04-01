@@ -1,0 +1,11 @@
+app_channel:
+    prefix: /channel/
+    resource: "channel/all.yml"
+
+app_file:
+    prefix: /file/
+    resource: "file/all.yml"
+
+app_home:
+    prefix: /
+    resource: "home/all.yml"
